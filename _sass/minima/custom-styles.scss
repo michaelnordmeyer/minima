@@ -20,14 +20,14 @@ video {
 figure > img { margin: 0 auto; }
 figcaption { text-align: center; }
 
-/* Custom CSS based on Minima */
-
 .aligncenter { display: block; margin: 0 auto; }
 
-//.site-title { font-size: 32px; margin-bottom: 0; }
+.site-header h1 { margin-bottom: 0; }
 
-.post-list > li > h2 { margin-bottom: 1px; }
-//.post-link { line-height: 1.3em; }
+.post-list > li > h2 {
+  margin-bottom: 1px;
+  line-height: 1.2;
+}
 .post-image { margin-bottom: $spacing-unit / 2; }
 .post .rss-subscribe { font-size: small; }
 
