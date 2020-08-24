@@ -49,7 +49,7 @@ footer {
   list-style: none;
   columns: 4;
   margin-left: 0;
-  font-size: $base-font-size * 0.95;
+  font-size: $small-font-size;
   a:hover { text-decoration: none }
   a:hover .username { text-decoration: underline }
 }
