@@ -35,8 +35,6 @@ figcaption { text-align: center; }
 .footer-col-2,
 .footer-col-3 { width: calc(100% - (#{$spacing-unit} / 2)); }
 
-.profiles li { display: inline; }
-
 footer h2 > a,
 footer h2 > a:visited { color: #424242; }
 footer input[type="search"] { width: 100%; font-size: 1em; }
@@ -45,12 +43,10 @@ footer input[type="search"] { width: 100%; font-size: 1em; }
   footer input[type="search"] { width: 50%; }
 }
 
-.footer-col-1 {
-  width: 100%
-}
-
-.footer-col-2 {
-  width: 100%
+.profiles {
+  list-style: none;
+  columns: 4;
+  margin-left: 0
 }
 
 .profiles a:hover {
@@ -61,19 +57,10 @@ footer input[type="search"] { width: 100%; font-size: 1em; }
     text-decoration: underline
 }
 
-.profiles li + li {
-  padding-top: 5px
-}
-
-.profiles {
-  list-style: none;
-  columns: 4;
-  margin-left: 0
-}
-
 // 320, 375, 414
 @media screen and (min-width: 415px) {
-  .profiles li { columns: 1; }
+  .profiles { columns: 1; }
+  .profiles li + li { padding-top: 5px }
   .footer-col-1 { width: calc(15% - (#{$spacing-unit} / 2)); }
   .footer-col-2 { width: calc(85% - (#{$spacing-unit} / 2)); }
 }
